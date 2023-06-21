@@ -25,6 +25,7 @@ jobs:
             --exclude=.github \
             .
   deploy:
+    needs: build
     permissions:
       pages: write
       id-token: write
